@@ -52,5 +52,32 @@ describe('Feature: Sign up', () => {
         await LoginPage.signUp(email, password, "not_same")
         await expect($('//*[contains(@text, "' + expectedMessage + '")]')).toBeExisting()
     })
+
+    it('Sign up with too short password', async () => {
+        const email = "jagotester@yopmail.com"
+        const password = "short" //for real purpose use env variable
+        const expectedMessage = "Please enter at least 8 characters";
+
+        await LoginPage.signUp(email, password)
+        await expect($('//*[contains(@text, "' + expectedMessage + '")]')).toBeExisting()
+    })
+
+    it('Sign up with too long password', async () => {
+        const email = "jagotester@yopmail.com"
+        const password = "a".repeat(10000) //for real purpose use env variable
+        const expectedMessage = "password too long";
+
+        await LoginPage.signUp(email, password)
+        await expect($('//*[contains(@text, "' + expectedMessage + '")]')).toBeExisting()
+    })
+
+    it('Sign up with invalid email format', async () => {
+        const email = "not.email"
+        const password = "password" //for real purpose use env variable
+        const expectedMessage = "Please enter a valid email address";
+
+        await LoginPage.signUp(email, password)
+        await expect($('//*[contains(@text, "' + expectedMessage + '")]')).toBeExisting()
+    })
 })
 
