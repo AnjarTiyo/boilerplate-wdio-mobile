@@ -40,15 +40,13 @@ Before starting test, make sure your emulator or real devices connected. Verify 
 ```
 avd devices
 ```
-and make sure list of attached devices is shown. 
+And make sure list of attached devices is shown. 
 
-Install the apps you downloaded from [here](https://github.com/webdriverio/native-demo-app/releases) to your devices
-
-Then you can continue to run test with following script
+Install the apps you downloaded from [here](https://github.com/webdriverio/native-demo-app/releases) to your devices, then you can continue to run test with following script
 ```
 npm run test
 ```
 
 ## Author
 Anjar Tiyo Saputro [Github](https://github.com/AnjarTiyo) | [LinkedIn](https://id.linkedin.com/in/anjartiyo)
-<anjar.jog@gmail.com>
+Email : <anjar.jog@gmail.com>

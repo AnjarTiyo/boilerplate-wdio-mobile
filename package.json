@@ -1,6 +1,8 @@
 {
   "name": "boilerplate-wdio-mobile",
   "type": "module",
+  "version": "1.0.0",
+  "author": "Anjar Tiyo Saputro",
   "devDependencies": {
     "@wdio/appium-service": "^8.11.2",
     "@wdio/cli": "^8.11.2",
