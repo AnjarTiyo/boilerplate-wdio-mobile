@@ -17,7 +17,7 @@ Make sure you have installed below:
 1. Node.js
 2. Android Emulator and running
 3. ADB installed
-4. Application Under Test: Native Demo Apps [Download] (https://github.com/webdriverio/native-demo-app/releases) 
+4. Application Under Test: Native Demo Apps [Download](https://github.com/webdriverio/native-demo-app/releases) 
 
 ### 1. Clone this Repo
 ```
@@ -42,7 +42,7 @@ avd devices
 ```
 and make sure list of attached devices is shown. 
 
-Install the apps you downloaded from [here] (https://github.com/webdriverio/native-demo-app/releases) to your devices
+Install the apps you downloaded from [here](https://github.com/webdriverio/native-demo-app/releases) to your devices
 
 Then you can continue to run test with following script
 ```
@@ -50,5 +50,5 @@ npm run test
 ```
 
 ## Author
-Anjar Tiyo Saputro [Github] (https://github.com/AnjarTiyo) | [LinkedIn] (https://id.linkedin.com/in/anjartiyo)
+Anjar Tiyo Saputro [Github](https://github.com/AnjarTiyo) | [LinkedIn](https://id.linkedin.com/in/anjartiyo)
 <anjar.jog@gmail.com>
