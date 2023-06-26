@@ -2,7 +2,7 @@ import LoginPage from '../../page/login.page.js';
 
 describe('Feature: Sign up', () => {
     beforeEach(async function () {
-        // await driver.launchApp()
+        await driver.launchApp()
     })
     afterEach(async function () {
         await driver.closeApp()
