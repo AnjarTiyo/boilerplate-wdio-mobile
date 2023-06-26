@@ -1,6 +1,14 @@
 # Example of Mobile App Automated Testing using WebDriverIO and Appium
 
-<p>This is basic example of using WDIO for Mobile Automation testing. Application under test is WDIO Demo App. You can download it in this repository. We are automating Sign Up scenario. </p>
+<p>This is basic example of using WDIO for Mobile Automation testing. Application under test is WDIO Demo App. </p>
+
+## Test Scenario
+Feature: Sign Up
+Test Cases:
+1. Sign up with valid data
+2. Sign up with empty email
+3. Sign up with empty password
+4. Sign up but enter wrong password confirmation
 
 ## Usage
 
@@ -9,6 +17,7 @@ Make sure you have installed below:
 1. Node.js
 2. Android Emulator and running
 3. ADB installed
+4. Application Under Test: Native Demo Apps [Download] (https://github.com/webdriverio/native-demo-app/releases) 
 
 ### 1. Clone this Repo
 ```
@@ -31,7 +40,11 @@ Before starting test, make sure your emulator or real devices connected. Verify 
 ```
 avd devices
 ```
-and make sure list of attached devices is shown. Then you can continue to run test with following script
+and make sure list of attached devices is shown. 
+
+Install the apps you downloaded from [here] (https://github.com/webdriverio/native-demo-app/releases) to your devices
+
+Then you can continue to run test with following script
 ```
 npm run test
 ```
